@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rate</title>
+    <style>
+           .container {
+            width: 1320px;
+            margin: 0 auto;
+            padding-top: 200px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       
+        }
+        .main-div{
+            text-align: center;
+            width: 300px;
+            padding: 30px;
+            background-color: bisque;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="main-div">
+            <h1 id="principalAmount"></h1>
+            <hr>
+            <h1 id="numberOfYears"></h1>
+            <hr>
+            <h1 id="rate"></h1>
+            <hr>
+            <h1 id="total"></h1>
+        </div>
+    </div>
+    <script>
+        let principalAmount = 1000;
+            let numberOfYears = 5;
+   
+            let rate;
+            if (numberOfYears > 3 && numberOfYears <= 5) {
+                if (numberOfYears > 5 && numberOfYears <= 8){
+                    rate = 7;
+                }
+                else{
+                    rate = 5; 
+                }
+      
+            } else {
+                if (numberOfYears > 8 && numberOfYears <= 12){
+                    rate = 12;
+                }
+                else{
+                    rate = 8; 
+                }
+            }
+
+            let interest = (principalAmount * rate * numberOfYears) / 100;
+
+            document.getElementById("rate").innerHTML = "Interest Rate:" + rate + "%" + "<br>"
+        document.getElementById("total").innerHTML = "Total Interest:" + interest + "<br>"
+        document.getElementById("principalAmount").innerHTML = "principalAmount:" + principalAmount;
+        document.getElementById("numberOfYears").innerHTML = "numberOfYears:" + numberOfYears;
+
+    </script>
+</body>
+
+</html>

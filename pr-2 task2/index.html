@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>season</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 1320px;
+            padding-left: var(--gutter-width);
+            padding-right: var(--gutter-width);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: calc(-1 * var(--gutter-width));
+            margin-right: calc(-1 * var(--gutter-width));
+        }
+
+        .w-4 {
+            width: 33.3333%;
+        }
+
+
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+
+        .season {
+            padding: 20px;
+            margin-top: 100px;
+            height: 600px;
+            width: 500px;
+            background-color: aquamarine;
+
+        }
+        h1,h2{
+            text-align: center;
+            font-size: 30px;
+           /
+
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+   <div class="container">
+    <div class="row">
+        <div class="w-4">
+            <div class="season">
+              <div class="image">
+                <img src="images/gradient-summer-illustration_23-2148946644.avif" alt="img">
+              </div>
+              <h1 id="season">
+                season:
+              </h1>
+              <hr>
+              <h2 id="month"></h2>
+              <hr>
+
+            </div>
+        </div>
+
+    
+
+    </div>
+   </div>
+
+    <script src="js/switch.js"></script>
+    <script src="js/month.js"></script>
+</body>
+
+</html>
